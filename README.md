@@ -49,7 +49,7 @@ Ensure you have the required dependencies installed. For Android projects, this 
 - Navigate to the cloned repository and open it.
 - Allow Android Studio to install any necessary dependencies.
   
-**Usage**
+## **Usage**
 - Launch the Application
 - Build and run the application using Android Studio.
 - Interacting with the Application
@@ -58,14 +58,14 @@ Ensure you have the required dependencies installed. For Android projects, this 
 - Access personalized video recommendations for workouts.
 
   
-**Modules**
+## **Modules**
 
 - UI and Accessibility Module: Enhances user interface for better accessibility.
 - AI-Powered Video Recommendations: Provides personalized video content.
 - Food Image Recognition: Identifies food and calculates calorie content.
 - Feedback Mechanism: Collects user feedback to improve the system.
   
-**Expected Outcomes**
+## **Expected Outcomes**
   
 - Improved Health and Well-being: Personalized insights and recommendations for better health.
 - Enhanced Accessibility: Inclusive design tailored for wheelchair users.
@@ -73,7 +73,7 @@ Ensure you have the required dependencies installed. For Android projects, this 
 - Support for Healthcare Professionals: Provides valuable data for better health management.
 - Data-driven Insights and Research: Contributes to research in AI and nutrition.
 
-**References**
+## **References**
 
 - Johnson E., Kim S. (2024). "Advancements in AI for Personalized Nutrition and Fitness Tracking." International Journal of Artificial Intelligence in Health and Fitness, 8(2), 112-129.
 - Patel R., Garcia A. (2023). "Machine Learning Approaches for Nutritional Analysis and Dietary Recommendation Systems." Journal of Health Informatics and Technology, 15(4), 245-260.
