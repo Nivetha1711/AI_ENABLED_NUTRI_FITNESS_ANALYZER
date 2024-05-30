@@ -13,10 +13,9 @@ This project aims to develop an AI-powered nutritional fitness analyzer specific
 - [Usage](#usage)
 - [Modules](#modules)
 - [Expected Outcomes](#expected-outcomes)
-- [Team Members](#team-members)
+
 - [References](#references)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -65,6 +64,7 @@ Ensure you have the required dependencies installed. For Android projects, this 
 - AI-Powered Video Recommendations: Provides personalized video content.
 - Food Image Recognition: Identifies food and calculates calorie content.
 - Feedback Mechanism: Collects user feedback to improve the system.
+  
 **Expected Outcomes**
   
 - Improved Health and Well-being: Personalized insights and recommendations for better health.
