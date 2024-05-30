@@ -43,7 +43,7 @@ Clone the TensorFlow examples GitHub repository to your computer to get the demo
 application.
 
 ```
-https://github.com/Ravi-Teja-konda/trackMyNutrition.git
+(https://github.com/Nivetha1711/Nutri-Fitness-App)
 ```
 
 Open the TensorFlow source code in Android Studio. To do this, open Android
