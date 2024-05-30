@@ -1,107 +1,86 @@
-# Android app for food recognition and display nutrition info using Teachable Machine learning
+# AI-Enabled Nutritional Fitness Analyser for Disability Wheelchair Persons
 
-## Overview
+## Project Overview
 
-This android application will recognise the food item from the camera input and link the nutritional
-info for the food item.
+This project aims to develop an AI-powered nutritional fitness analyzer specifically designed for wheelchair users. The system focuses on dietary tracking and personalized nutritional insights, utilizing advanced technologies like machine learning, ultrasonic sensors, and natural language processing (NLP). Our goal is to revolutionize dietary tracking and optimize health and fitness for disabled individuals.
 
-This is an example application for [TensorFlow Lite](https://tensorflow.org/lite)
-on Android. It uses
-[Image classification](https://www.tensorflow.org/lite/models/image_classification/overview)
-to continuously classify whatever it sees from the device's back camera.
-Inference is performed using the TensorFlow Lite Java API. The demo app
-classifies frames in real-time, displaying the top most probable
-classifications. It allows the user to choose between a floating point or
-[quantized](https://www.tensorflow.org/lite/performance/post_training_quantization)
-model, select the thread count, and decide whether to run on CPU, GPU, or via
-[NNAPI](https://developer.android.com/ndk/guides/neuralnetworks).
+## Table of Contents
 
-These instructions walk you through building and
-running the demo on an Android device. For an explanation of the source, see
-[TensorFlow Lite Android image classification example](https://www.tensorflow.org/lite/models/image_classification/android).
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Modules](#modules)
+- [Expected Outcomes](#expected-outcomes)
+- [Team Members](#team-members)
+- [References](#references)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Features
 
-### Model
-The model is created by training on images scraped from google.
-After scraping the images they are classified and trained via https://teachablemachine.withgoogle.com/train
+- **Voice Recognition**: Allows users to input data and interact with the system using voice commands.
+- **AI-Powered Recommendations**: Personalized nutrition and fitness recommendations based on individual needs.
+- **Food Image Recognition**: Identifies food items and calculates their calorie content.
+- **User Feedback Mechanism**: Collects and incorporates user feedback to improve the system.
+- **Accessibility**: Optimized user interface for wheelchair users with alternative input methods.
 
-## Requirements
+## Technologies Used
 
-*   Android Studio (installed on a Linux, Mac or Windows machine)
+- **Machine Learning**
+- **Natural Language Processing (NLP)**
+- **Android Development**
 
-*   Android device in
-    [developer mode](https://developer.android.com/studio/debug/dev-options)
-    with USB debugging enabled
+## Installation
 
-*   USB cable (to connect Android device to your computer)
+To set up the project locally, follow these steps:
 
-## Build and run
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/Nivetha1711/Nutri-Fitness-App.git
+   cd your-repo
+2.  **Install Dependencies**
+Ensure you have the required dependencies installed. For Android projects, this typically involves setting up Android Studio.
 
-### Step 1. Clone the TensorFlow examples source code
+3.   **Set Up Android Studio**
 
-Clone the TensorFlow examples GitHub repository to your computer to get the demo
-application.
+- Open Android Studio.
+- Select "Open an existing Android Studio project".
+- Navigate to the cloned repository and open it.
+- Allow Android Studio to install any necessary dependencies.
+  
+**Usage**
+- Launch the Application
+- Build and run the application using Android Studio.
+- Interacting with the Application
+- Use voice commands to navigate the application and input dietary information.
+- Utilize the food image recognition feature to scan food items for calorie calculation.
+- Access personalized video recommendations for workouts.
 
-```
-(https://github.com/Nivetha1711/Nutri-Fitness-App)
-```
+  
+**Modules**
 
-Open the TensorFlow source code in Android Studio. To do this, open Android
-Studio and select `Open an existing project`, setting the folder to
-`examples/lite/examples/image_classification/android`
+- UI and Accessibility Module: Enhances user interface for better accessibility.
+- AI-Powered Video Recommendations: Provides personalized video content.
+- Food Image Recognition: Identifies food and calculates calorie content.
+- Feedback Mechanism: Collects user feedback to improve the system.
+**Expected Outcomes**
+  
+- Improved Health and Well-being: Personalized insights and recommendations for better health.
+- Enhanced Accessibility: Inclusive design tailored for wheelchair users.
+- Empowerment and Self-management: Enables users to manage their health independently.
+- Support for Healthcare Professionals: Provides valuable data for better health management.
+- Data-driven Insights and Research: Contributes to research in AI and nutrition.
 
-<img src="images/classifydemo_img1.png?raw=true" />
+**References**
 
-### Step 2. Build the Android Studio project
+- Johnson E., Kim S. (2024). "Advancements in AI for Personalized Nutrition and Fitness Tracking." International Journal of Artificial Intelligence in Health and Fitness, 8(2), 112-129.
+- Patel R., Garcia A. (2023). "Machine Learning Approaches for Nutritional Analysis and Dietary Recommendation Systems." Journal of Health Informatics and Technology, 15(4), 245-260.
+- Chen L., Nguyen K. (2022). "AI-Enabled Fitness Apps: Challenges and Opportunities." Journal of Digital Health and Wellness, 3(1), 45-58.
+- Rodriguez M., Lee D. (2021). "User Engagement Strategies in AI-Powered Nutrition and Fitness Apps." Proceedings of the International Conference on Health Informatics, 78-85.
+- Chen L., Wang Y., Zhang X. (2020). "SmartFit: A Machine Learning-Based Nutritional Fitness Analyzer for Personalized Diet and Exercise Recommendations." Journal of Health Informatics Research, 8(2), 110-125.
 
-Select `Build -> Make Project` and check that the project builds successfully.
-You will need Android SDK configured in the settings. You'll need at least SDK
-version 23. The `build.gradle` file will prompt you to download any missing
-libraries.
-
-The file `download.gradle` directs gradle to download the two models used in the
-example, placing them into `assets`.
-
-<img src="images/classifydemo_img4.png?raw=true" style="width: 40%" />
-
-<img src="images/classifydemo_img2.png?raw=true" style="width: 60%" />
-
-<aside class="note"><b>Note:</b><p>`build.gradle` is configured to use
-TensorFlow Lite's nightly build.</p><p>If you see a build error related to
-compatibility with Tensorflow Lite's Java API (for example, `method X is
-undefined for type Interpreter`), there has likely been a backwards compatible
-change to the API. You will need to run `git pull` in the examples repo to
-obtain a version that is compatible with the nightly build.</p></aside>
-
-### Step 3. Install and run the app
-
-Connect the Android device to the computer and be sure to approve any ADB
-permission prompts that appear on your phone. Select `Run -> Run app.` Select
-the deployment target in the connected devices to the device on which the app
-will be installed. This will install the app on the device.
-
-<img src="images/classifydemo_img5.png?raw=true" style="width: 60%" />
-
-<img src="images/classifydemo_img6.png?raw=true" style="width: 70%" />
-
-<img src="images/classifydemo_img7.png?raw=true" style="width: 40%" />
-
-<img src="images/classifydemo_img8.png?raw=true" style="width: 80%" />
-
-To test the app, open the app called `TFL Classify` on your device. When you run
-the app the first time, the app will request permission to access the camera.
-Re-installing the app may require you to uninstall the previous installations.
-
-## Assets folder
-_Do not delete the assets folder content_. If you explicitly deleted the
-files, choose `Build -> Rebuild` to re-download the deleted model files into the
-assets folder.
-
-
-## References:
-* https://github.com/AndroidArena/CurrencyDetectorAndroid
-* https://www.nutritionix.com
-* https://www.herbazest.com/
 
 
 
