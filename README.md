@@ -4,6 +4,11 @@
 
 This project aims to develop an AI-powered nutritional fitness analyzer specifically designed for wheelchair users. The system focuses on dietary tracking and personalized nutritional insights, utilizing advanced technologies like machine learning, ultrasonic sensors, and natural language processing (NLP). Our goal is to revolutionize dietary tracking and optimize health and fitness for disabled individuals.
 
+## Android App link
+https://drive.google.com/file/d/13eOz6uER_tveHMUv51ZL1ZYpy9HcDURB/view?usp=drive_link
+
+ Use above link to download the apk file
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
