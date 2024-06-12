@@ -1,4 +1,4 @@
-# AI-Enabled Nutritional Fitness Analyser for Disability Wheelchair Persons
+# AI-Enabled Nutritional Fitness Analyser 
 
 ## Project Overview
 
